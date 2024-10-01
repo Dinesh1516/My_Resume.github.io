@@ -1,0 +1,107 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent the page from scrolling */
+    height: 100%; /* Ensure the height of the page takes full view */
+}
+
+.fl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    box-sizing: border-box;
+    padding: 20px; /* Some padding for spacing */
+    margin-bottom: 10px;
+}
+
+.container{
+	max-width: 100%;
+    max-height: 100vh;
+    height: calc(100vh - 40px); /* Set height with consideration for padding from .fl */
+    width: 70%;
+    display: grid;
+    gap: 10px;
+    grid-template: 2fr 2fr 2fr 2fr auto 0.5fr / 1fr 1fr 2fr;
+    background-color: #2C446F;
+    justify-content: center;
+	padding : 20px;
+	border-radius:10px;
+    overflow-y: auto; /* Allow only vertical scrolling if necessary */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-size: cover;
+	
+}
+h4, h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.pro_pic > img{
+    grid-area: 1/ 1/ 2/ 2;
+    border-radius: 50%;
+}
+
+.intro{
+    grid-area: 1/ 2/ 2/ 4;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CARRIER_obj{
+    grid-area: 2/ 1/ 3/ 3;
+}
+
+.pro_details{
+    grid-area: 3/ 1/ 4/ 3;
+}
+
+.skills{
+    grid-area: 2/ 3/ 5/ 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education{
+    grid-area: 4/ 1/ 5/ 3;
+}
+
+.projects{
+    grid-area: 5/ 1/ 6/ 4;
+}
+
+.refree_1{
+    grid-area: 6/ 1/ 7/ 3;
+}
+
+.refree_2{
+    grid-area: 6/ 3/ 7/ 4;
+}
+
+.sections{
+    border-radius: 10px;
+    padding: 10px;
+    background-color:aliceblue;
+}
+
+h2{
+	color:blue;
+}
+h3, h2{
+	font-family: system-ui;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p,li{
+    font-family: system-ui;
+    font-weight: 300;
+    font-size: 14px;
+}
+.small_img{
+    display: flex;
+    gap: 30px;
+}
